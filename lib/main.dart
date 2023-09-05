@@ -86,21 +86,11 @@ class MyApp extends StatelessWidget {
                         icon: Icon(Icons.link))),
               ),
             ),
-            Container(
-              margin: EdgeInsets.only(left: 30, top: 30, right: 30),
-              height: 50,
-              width: 250,
-              decoration: BoxDecoration(
-                  color: Colors.lightBlueAccent,
-                  borderRadius: BorderRadius.circular(20)),
-              child: const Padding(
-                  padding: EdgeInsets.only(left: 20),
-                  child: Center(
-                      child: Text("Update",
-                          style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 20,
-                              fontWeight: FontWeight.w700)))),
+            FloatingActionButton(
+              onPressed: () {},
+              color: Colors.lightBlueAccent,
+              textColor: Colors.white,
+              child: const Text("Update"),
             )
           ],
         ),
