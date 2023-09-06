@@ -86,12 +86,20 @@ class MyApp extends StatelessWidget {
                         icon: Icon(Icons.link))),
               ),
             ),
-            FloatingActionButton(
+            OutlinedButton(
               onPressed: () {},
-              color: Colors.lightBlueAccent,
-              textColor: Colors.white,
+              style: OutlinedButton.styleFrom(
+                backgroundColor: Colors.lightBlueAccent,
+              ),
               child: const Text("Update"),
-            )
+            ),
+            ElevatedButton(
+              child: Text("Update"),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.lightBlueAccent,
+              ),
+              onPressed: () {},
+            ),
           ],
         ),
       ),
